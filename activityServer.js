@@ -7,11 +7,13 @@ if (process.argv.length != 3) {
 
 /* libraries */
 const http = require("http")
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const express = require("express")
 const path = require("path")
 const app = express()
 const bodyParser = require("body-parser");
 const portNumber = Number(process.argv[2]);
+
 
 /* configuring paths */
 app.set("views", path.resolve(__dirname, "templates"));
