@@ -1,0 +1,30 @@
+WebPage 1: HOME PAGE 
+    - Links to a page where a new user can enter their information and
+    their favorite activities (NEW USER PAGE)
+    - Links to another page where a returning user can view their favorite 
+    activities (VIEW ACTIVITIES PAGE)
+
+WebPage 2: NEW USER PAGE
+    - Consists of a form asking for the user's name, email, and a place where
+    they can list their favorite activities (text box?  some sort of option
+    selector? look into this)
+    - When they submit, it should take them straight to the VIEW ACTIVITIES PAGE
+
+WebPage 3: VIEW ACTIVITIES PAGE  
+    - Displays the name of the user
+    - Lists the favorite activities of the user in a table 
+    - Has a text box where the user can enter a new activity, and upon pressing
+    a button next to it, the activity will be added to their list of activities
+    and the page will be reloaded.  
+    - Has a button where the user can request a random new activity be added to the
+    list, and the page will be reloaded.  
+
+
+Things to figure out: 
+    - How to host the site
+
+Important assumptions:
+    - nobody will ever re-enter the same name as a new user (so every document will have a unique name)
+    - nobody will ever type an invalid name into the returning users page.
+    - nobody will ever type in an activity that already exists on their table
+    - the random activity generator will never generate an activity that already exists on their table

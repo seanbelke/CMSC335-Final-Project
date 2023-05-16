@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            color: red;
+        }
+        strong {
+            color: brown;
+        }
+        th {
+            background-color: rgba(220, 132, 200, 0.7)
+        }
+        td {
+            background-color: rgba(132, 200, 200, 0.6)
+        }
+        </style>
+    <title>Activities</title>
+</head>
+<body>
+    <h1>Your Favorite Activities!</h1>
+    <p>Welcome, <span id="userName"><%- name %></span>! Here are your favorite activities:</p> 
+    <%- table %>
+    <br><br>
+    <p>Have you thought of another activity that you enjoy since you were last here?  If so, enter it in the box below:</p>
+    <form action="../addActivity" method="post">
+        <input type="text" name="newActivity" id="newActivity">
+        <input type="submit" value="Add Activity">
+        <input type="hidden" name="name" id="name" value="">
+    </form>
+    <br><br>
+    Do none of the above options appeal to you right now?  Click here to generate a new fun activity: 
+    <form action="../generateNewActivity" method="post">
+        <input type="submit" value="Generate New Activity">
+        <input type="hidden" name="name2" id="name2" value="">
+    </form>
+    <hr>
+    <a href="/">HOME</a>
+    <script>
+        "use strict";
+        console.log("blah")
+        document.getElementById("name").value = document.getElementById("userName").innerHTML
+        document.getElementById("name2").value = document.getElementById("userName").innerHTML
+    </script>
+</body>
+</html>

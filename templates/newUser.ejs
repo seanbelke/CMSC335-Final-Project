@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            color: red;
+        }
+        strong {
+            color: brown;
+        }
+        </style>
+    <title>New User</title>
+</head>
+<body>
+    <h1>New User</h1>
+    <form action="../processNewUser" method="post">
+        Name: <input type="text" name="name" id="name"><br>
+        Email: <input type="email" name="email" id="email"><br><br>
+        Favorite Activities (list each one on a new line):<br>
+        <textarea rows="8" cols="50" name="activities" id="activities"></textarea><br>
+        <input type="submit" value="Create Entry">
+    </form>
+    <hr>
+    <a href="/">HOME</a>
+</body>
+</html>
